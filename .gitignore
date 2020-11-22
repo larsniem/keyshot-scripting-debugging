@@ -1,3 +1,6 @@
 /__pycache__/
-/.idea
+.idea/*
+!.idea/keyshot-scripting-debugging.iml
+!.idea/modules.xml
+!.idea/workspace.xml
 /Keyshot Examples

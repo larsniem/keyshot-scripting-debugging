@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f4839fd-eda0-4ddd-bd3c-c7544f48892e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="ece4ad33-fa3a-4d67-8171-1f6b955ff2d1" />
+  <component name="ProjectId" id="1kQJcRoAEzEd6ziUWCCSFO3TdSY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/NeuerOrdner" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Remote Debugging" type="PyRemoteDebugConfigurationType" factoryName="Python Remote Debug">
+      <module name="keyshot-scripting" />
+      <option name="PORT" value="15678" />
+      <option name="HOST" value="localhost" />
+      <PathMappingSettings>
+        <option name="pathMappings">
+          <list />
+        </option>
+      </PathMappingSettings>
+      <option name="REDIRECT_OUTPUT" value="true" />
+      <option name="SUSPEND_AFTER_CONNECT" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyRemoteDebugConfigurationType" factoryName="Python Remote Debug">
+      <option name="PORT" value="15678" />
+      <option name="HOST" value="localhost" />
+      <PathMappingSettings>
+        <option name="pathMappings">
+          <list />
+        </option>
+      </PathMappingSettings>
+      <option name="REDIRECT_OUTPUT" value="true" />
+      <option name="SUSPEND_AFTER_CONNECT" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f4839fd-eda0-4ddd-bd3c-c7544f48892e" name="Default Changelist" comment="" />
+      <created>1605626961395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605626961395</updated>
+      <workItem from="1605626966145" duration="781000" />
+      <workItem from="1605817814188" duration="2000" />
+      <workItem from="1605817938233" duration="1198000" />
+      <workItem from="1605820470992" duration="1243000" />
+      <workItem from="1605822453848" duration="284000" />
+      <workItem from="1605995339168" duration="1496000" />
+      <workItem from="1605996867868" duration="237000" />
+      <workItem from="1606035295529" duration="874000" />
+      <workItem from="1606036691218" duration="2000" />
+      <workItem from="1606037401241" duration="524000" />
+      <workItem from="1606037948093" duration="1288000" />
+      <workItem from="1606039290674" duration="4993000" />
+      <workItem from="1606044775483" duration="20000" />
+      <workItem from="1606045051129" duration="3000" />
+      <workItem from="1606045085635" duration="34000" />
+      <workItem from="1606045986003" duration="232000" />
+      <workItem from="1606046236523" duration="350000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1367" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606038109535">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1367" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1606038109535" />
+    <state width="1234" height="344" key="GridCell.Tab.0.bottom" timestamp="1606039246534">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="344" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1606039246534" />
+    <state width="1234" height="344" key="GridCell.Tab.0.center" timestamp="1606039246534">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="344" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1606039246534" />
+    <state width="1234" height="344" key="GridCell.Tab.0.left" timestamp="1606039246534">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="344" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1606039246534" />
+    <state width="1234" height="344" key="GridCell.Tab.0.right" timestamp="1606039246534">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="344" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1606039246534" />
+    <state width="1234" height="344" key="GridCell.Tab.1.bottom" timestamp="1606039246534">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="344" key="GridCell.Tab.1.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1606039246534" />
+    <state width="1234" height="344" key="GridCell.Tab.1.center" timestamp="1606039246534">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="344" key="GridCell.Tab.1.center/0.0.2560.1040@0.0.2560.1040" timestamp="1606039246534" />
+    <state width="1234" height="344" key="GridCell.Tab.1.left" timestamp="1606039246534">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="344" key="GridCell.Tab.1.left/0.0.2560.1040@0.0.2560.1040" timestamp="1606039246534" />
+    <state width="1234" height="344" key="GridCell.Tab.1.right" timestamp="1606039246534">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="344" key="GridCell.Tab.1.right/0.0.2560.1040@0.0.2560.1040" timestamp="1606039246534" />
+  </component>
+</project>
