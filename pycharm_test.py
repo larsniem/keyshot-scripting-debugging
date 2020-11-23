@@ -20,6 +20,11 @@ pydevd.mapping_patches = {"<string>": os.path.basename(__file__)}
 # Debugger will stop here because suspend is set to true.
 pydevd.settrace('localhost', port=15678, stdoutToServer=True, stderrToServer=True, suspend=True)
 
-print("Hello World!")
-print("Hello Breakpoint!")
-print("Hello World again!")
+try:
+    print("Hello World!")
+    print("Hello Breakpoint!")
+    print("Hello World again!")
+except Exception as e:
+    print(e)
+finally:
+    pydevd.stoptrace()

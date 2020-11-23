@@ -36,7 +36,7 @@ User variables append/overwrite system variables. Otherwise you can obsiously se
 
 ````python
 import sys, os
-import pydevd
+import pydevd # You should import pydevd directly, not pydevd_pycharm (see the module why this make sense)
 
 root = os.path.dirname(__file__)
 sys.path.append(root)
@@ -45,7 +45,20 @@ os.chdir(root)
 pydevd.mapping_patches = {"<string>": os.path.basename(__file__)}
 
 pydevd.settrace('localhost', port=15678, stdoutToServer=True, stderrToServer=True, suspend=True)
+
+try:
+
+    # Main
+
+except Exception as e:
+    print(e)
+finally:
+    pydevd.stoptrace()
 ````
+
+   - Running the script and the PyCharm remote debugging server is not avialable results in an exception.
+   - "suspend" ensures the debugger works probably and stops at calling "set_trace". As a result of setting it to False Breakpoints won't hit everytime...
+   - You should make sure the script disconnects from the PyCharm debugging server. So use "try" and "finally" to ensure this. Otherwise the rerunning the script will may not hit breakpoints.
 
 6. Start the remote debugging server in PyCharm and run the script to debug. Now the breakpoints should be hitted.
 
