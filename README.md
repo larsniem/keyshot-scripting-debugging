@@ -11,7 +11,7 @@ Nothing goes about a nice debugging experience during bug hunting. So this rathe
 |WingIDE            |7.2        |Even there is a [explicit guide for attaching the debugger to a embeded Python environment](https://wingware.com/doc/debug/debugging-embedded-code). Still no breakpoints will be hitted, but the script finishes without errors.|
 |Eclipse+pydev      |-          |Not tested, also relies on pure pydevd like PyCharm, so may worth trying if PyCharm Professional is not available|
 
-There is at least a common pattern here, which hints at a problem with the path mappings, even there isn't a real remote. So taking a look into Pydevd which all (except Wing IDE?) rely on. The best bet here was PyCahrm 2019.2.6 because it uses a pure implementation of Pydevd, which is not that hard to understand and to patch. Some fiddling around later the point where Pydevd transmits the filepath to the server of PyCharm was identified. So applying a little patch into Pydevd made things work finally.
+There is at least a common pattern here, which hints at a problem with the path mappings, even there isn't a real remote. So taking a look into Pydevd which all (except Wing IDE?) rely on. The best bet here was PyCharm 2019.2.6 because it uses a pure implementation of Pydevd, which is not that hard to understand and to patch. Some fiddling around later the point where Pydevd transmits the filepath to the server of PyCharm was identified. So applying a little patch into Pydevd made things work finally.
 
 ## How to get things working
 
@@ -23,17 +23,22 @@ This guide is based on Keyshot 9.3 and Windows (but this should work on other OS
 ```` cmd
 python --version
 ````
-There are multiple ways to setting up environemt variables in Windows. The following pictures show it through editing the system or user envrionment variables in the system control panel.
+There are multiple ways to setting up environment variables in Windows. The following pictures show it through editing the system or user environment variables in the system control panel.
 
 |Editing the System/User environment variables|Editing the Path environment variable|
 |:-------------------------------------------:|:-----------------------------------:|
 |![picture](doc/env_edit.png)                 |![picture](doc/env_path.png)         |
 
-If you're not that familiar with environment variables, user variables append/overwrite system variables. Otherwise you can obviously set the variables through your prefered command line interface. 
+If you're not that familiar with environment variables, user variables append/overwrite system variables. Otherwise you can obviously set the variables through your preferred command line interface. 
 
-3. Then follow the [guide to setup PyCharm Remote debugging](https://www.jetbrains.com/help/pycharm/remote-debugging-with-product.html#remote-interpreter). This repository already includes/is a PyCharm project with a "Remote Debugging" configuration.
+3. Setup a remote debugging configuration in [PyCharm](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html#services-tool-window). In the following image you see an example for the required remote debugging configuration, like the one found in this repositories PyCharm project. For details on remote debugging see [Docs](https://www.jetbrains.com/help/pycharm/remote-debugging-with-product.html#remote-interpreter).
+
+|Pycharm remote debugging configuration exmaple|
+|:--------------------------------------------:|
+|![picture](doc/pycharm_remote_debgug_config.png)|
+
 4. After installing pydevd_pycharm replace pydevd.py with the [patched version](/.patches/site-packages/pydevd.py). See your site-packages directory of your python distribution.
-5. Then just add the following to the top of your script additionaly, to connect to the debugging server:
+5. Then just add the following to the top of your script additionally, to connect to the debugging server:
 
 ````python
 import sys, os
@@ -57,9 +62,12 @@ finally:
     pydevd.stoptrace()
 ````
 
-   - Running the script and the PyCharm remote debugging server is not avialable results in an exception.
+   - Running the script and the PyCharm remote debugging server is not available results in an exception.
    - "suspend" ensures the debugger works probably and stops at calling "settrace". As a result of setting it to False breakpoints may won't hit everytime...
    - You should make sure the script disconnects from the PyCharm debugging server when exits. So use "try" and "finally" to ensure this. Otherwise rerunning the script will may not hit breakpoints anymore.
 
 6. Start the remote debugging server in PyCharm and run the script to debug in Keyshot. Now the breakpoints should be hitted.
+
+## Still known Issues
+This works kind of Debugging about 80% of the times you try debugging, in the other cases the script runs without hitting Breakpoints. But when it does not hit any Breakpoints it will show this behaviour likely multiple times. Things like restarting the debugging server, closing and reopening the Scripting Window in Keyshot seem to help here.
 
