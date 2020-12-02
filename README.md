@@ -6,7 +6,7 @@ Nothing goes about a nice debugging experience during bug hunting. So this rathe
 |:------------------|:---------:|:-----|
 |PyCharm (Pro)      |2019.2.6   |Breaking in to the debugger will result in a file "\<currert_working_dir>/\<string> "not found" exception, so no Breakpoints will be hitted, but the script finishes without errors.|
 |PyCharm (Pro)      |2020.2.3   |Connecting to the debugger will block the main thread forever. So you have to kill Keyshot.|
-|Visual Stuio       |2019       |Using mixed mode debugging, still results in not hitting any Breaktpoints (No Debugging Symbols found for script), but the script finishes without errors.|
+|Visual Studio       |2019       |Using mixed mode debugging, still results in not hitting any Breaktpoints (No Debugging Symbols found for script), but the script finishes without errors.|
 |VS Code/pydebug    |1.51       |During waiting for the debugger to attach pydebug starts a subprocess which results in starting a new Keyshot and Python instance, so it's a complete failure.|
 |WingIDE            |7.2        |Even there is a [explicit guide for attaching the debugger to a embeded Python environment](https://wingware.com/doc/debug/debugging-embedded-code). Still no breakpoints will be hitted, but the script finishes without errors.|
 |Eclipse+pydev      |-          |Not tested, also relies on pure pydevd like PyCharm, so may worth trying if PyCharm Professional is not available|
