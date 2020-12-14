@@ -4,7 +4,7 @@ Nothing goes about a nice debugging experience during bug hunting. So this rathe
 
 |IDE                |Version    |Result|
 |:------------------|:---------:|:-----|
-|PyCharm (Pro)      |2019.2.6   |Breaking in to the debugger will result in a file "\<currert_working_dir>/\<string> "not found" exception, so no Breakpoints will be hitted, but the script finishes without errors.|
+|PyCharm (Pro)      |2019.2.6   |Breaking into the debugger will result in a file "\<currert_working_dir>/\<string> "not found" exception, so no Breakpoints will be hitted, but the script finishes without errors.|
 |PyCharm (Pro)      |2020.2.3   |Connecting to the debugger will block the main thread forever. So you have to kill Keyshot.|
 |Visual Studio       |2019       |Using mixed mode debugging, still results in not hitting any Breaktpoints (No Debugging Symbols found for script), but the script finishes without errors.|
 |VS Code/pydebug    |1.51       |During waiting for the debugger to attach pydebug starts a subprocess which results in starting a new Keyshot and Python instance, so it's a complete failure.|
