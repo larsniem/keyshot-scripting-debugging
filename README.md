@@ -11,7 +11,7 @@ Nothing goes about a nice debugging experience during bug hunting. So this rathe
 |WingIDE            |7.2        |Even there is a [explicit guide for attaching the debugger to a embeded Python environment](https://wingware.com/doc/debug/debugging-embedded-code). Still no breakpoints will be hitted, but the script finishes without errors.|
 |Eclipse+pydev      |-          |Not tested, also relies on pure pydevd like PyCharm, so may worth trying if PyCharm Professional is not available|
 
-There is at least a common pattern here, which hints at a problem with the path mappings, even there isn't a real remote. So taking a look into Pydevd which all (except Wing IDE?) rely on. The best bet here was PyCharm 2019.2.6 because it uses a pure implementation of Pydevd, which is not that hard to understand and to patch. Some fiddling around later the point where Pydevd transmits the filepath to the server of PyCharm was identified. So applying a little patch into Pydevd made things work finally.
+There is at least a common pattern here, which hints at a problem with the path mappings, even there isn't a real remote. So taking a look into Pydevd, which all (except Wing IDE?) rely on, may helps. The best bet here was PyCharm 2019.2.6 because it uses a pure implementation of Pydevd, which is not that hard to understand and to patch. Some fiddling around later the point where Pydevd transmits the filepath to the server of PyCharm was identified. So applying a little patch into Pydevd made things work finally.
 
 ## How to get things working
 
